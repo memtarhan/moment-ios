@@ -21,6 +21,7 @@
 		43259E6229F7315600881C8B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43259E6029F7315600881C8B /* HomeViewController.xib */; };
 		43259E6529F731C900881C8B /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43259E6429F731C900881C8B /* HomeAssembly.swift */; };
 		43259E6829F7323700881C8B /* ViewControllerFactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43259E6729F7323700881C8B /* ViewControllerFactoryAssembly.swift */; };
+		43259E6A29F7375E00881C8B /* PhotosPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43259E6929F7375E00881C8B /* PhotosPostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		43259E6029F7315600881C8B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		43259E6429F731C900881C8B /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
 		43259E6729F7323700881C8B /* ViewControllerFactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryAssembly.swift; sourceTree = "<group>"; };
+		43259E6929F7375E00881C8B /* PhotosPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 		43259E5529F730A400881C8B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				43259E6929F7375E00881C8B /* PhotosPostView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				43259E2129F72F8300881C8B /* AppDelegate.swift in Sources */,
 				43259E2329F72F8300881C8B /* SceneDelegate.swift in Sources */,
 				43259E6829F7323700881C8B /* ViewControllerFactoryAssembly.swift in Sources */,
+				43259E6A29F7375E00881C8B /* PhotosPostView.swift in Sources */,
 				43259E6129F7315600881C8B /* HomeViewController.swift in Sources */,
 				43259E6529F731C900881C8B /* HomeAssembly.swift in Sources */,
 			);
