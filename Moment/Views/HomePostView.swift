@@ -8,18 +8,25 @@
 
 import SwiftUI
 
-struct PhotosPostView: View {
+class HomePostViewModel: ObservableObject {
+    @Published var username = "memtarhan"
+    @Published var photoURL = URL(string: "https://images.unsplash.com/photo-1682193964208-242fe33b2594")
+    @Published var models = [defaultPostContent]
+}
+
+struct HomePostView: View {
+    @ObservedObject var viewModel: HomePostViewModel
+
     var body: some View {
         GeometryReader { geometry in
 
             VStack(spacing: 8) {
                 HStack {
                     HStack(spacing: 4) {
-                        Image("sample-profile")
-                            .resizable()
+                        AsyncImage(url: viewModel.photoURL)
                             .frame(width: geometry.size.width / 10, height: geometry.size.width / 10)
                             .clipShape(Circle())
-                        Text("Username")
+                        Text(viewModel.username)
                             .font(.headline)
                         Spacer()
                     }
@@ -27,10 +34,10 @@ struct PhotosPostView: View {
                 .padding(4)
 
                 ScrollView(.horizontal) {
-                    HStack {
-                        PhotoPostView()
+                    LazyHStack {
+                        PostContentView(viewModel: PostContentViewModel(model: defaultPostContent))
                             .frame(width: geometry.size.width)
-                        PhotoPostView()
+                        PostContentView(viewModel: PostContentViewModel(model: defaultPostContent))
                             .frame(width: geometry.size.width)
                     }
                 }
@@ -38,13 +45,14 @@ struct PhotosPostView: View {
                 .scrollIndicators(.hidden, axes: [.vertical, .horizontal])
             }
         }
-        .edgesIgnoringSafeArea(.all)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
 struct PhotosPostView_Previews: PreviewProvider {
     static var previews: some View {
-        PhotosPostView()
+        HomePostView(viewModel: HomePostViewModel())
+            .padding()
+            .frame(width: 360, height: 450)
     }
 }

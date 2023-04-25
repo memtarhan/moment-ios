@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43106CDD29F748CB005A7595 /* PhotoPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43106CDC29F748CB005A7595 /* PhotoPostView.swift */; };
+		43106CDD29F748CB005A7595 /* PostContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43106CDC29F748CB005A7595 /* PostContentView.swift */; };
 		43259E2129F72F8300881C8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43259E2029F72F8300881C8B /* AppDelegate.swift */; };
 		43259E2329F72F8300881C8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43259E2229F72F8300881C8B /* SceneDelegate.swift */; };
 		43259E2A29F72F8400881C8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43259E2929F72F8400881C8B /* Assets.xcassets */; };
@@ -22,7 +22,7 @@
 		43259E6229F7315600881C8B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43259E6029F7315600881C8B /* HomeViewController.xib */; };
 		43259E6529F731C900881C8B /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43259E6429F731C900881C8B /* HomeAssembly.swift */; };
 		43259E6829F7323700881C8B /* ViewControllerFactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43259E6729F7323700881C8B /* ViewControllerFactoryAssembly.swift */; };
-		43259E6A29F7375E00881C8B /* PhotosPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43259E6929F7375E00881C8B /* PhotosPostView.swift */; };
+		43259E6A29F7375E00881C8B /* HomePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43259E6929F7375E00881C8B /* HomePostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		43106CDC29F748CB005A7595 /* PhotoPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPostView.swift; sourceTree = "<group>"; };
+		43106CDC29F748CB005A7595 /* PostContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentView.swift; sourceTree = "<group>"; };
 		43259E1D29F72F8300881C8B /* Moment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43259E2029F72F8300881C8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43259E2229F72F8300881C8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		43259E6029F7315600881C8B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		43259E6429F731C900881C8B /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
 		43259E6729F7323700881C8B /* ViewControllerFactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryAssembly.swift; sourceTree = "<group>"; };
-		43259E6929F7375E00881C8B /* PhotosPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPostView.swift; sourceTree = "<group>"; };
+		43259E6929F7375E00881C8B /* HomePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,8 +166,8 @@
 		43259E5529F730A400881C8B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				43259E6929F7375E00881C8B /* PhotosPostView.swift */,
-				43106CDC29F748CB005A7595 /* PhotoPostView.swift */,
+				43259E6929F7375E00881C8B /* HomePostView.swift */,
+				43106CDC29F748CB005A7595 /* PostContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -370,9 +370,9 @@
 				43259E2129F72F8300881C8B /* AppDelegate.swift in Sources */,
 				43259E2329F72F8300881C8B /* SceneDelegate.swift in Sources */,
 				43259E6829F7323700881C8B /* ViewControllerFactoryAssembly.swift in Sources */,
-				43259E6A29F7375E00881C8B /* PhotosPostView.swift in Sources */,
+				43259E6A29F7375E00881C8B /* HomePostView.swift in Sources */,
 				43259E6129F7315600881C8B /* HomeViewController.swift in Sources */,
-				43106CDD29F748CB005A7595 /* PhotoPostView.swift in Sources */,
+				43106CDD29F748CB005A7595 /* PostContentView.swift in Sources */,
 				43259E6529F731C900881C8B /* HomeAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

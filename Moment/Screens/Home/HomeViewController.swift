@@ -51,7 +51,7 @@ class HomeViewControllerImplemented: UIViewController, NibLoadable {
             backgroundConfiguration.backgroundColor = .clear
             cell.backgroundConfiguration = backgroundConfiguration
             cell.contentConfiguration = UIHostingConfiguration {
-                PhotosPostView()
+                HomePostView(viewModel: HomePostViewModel())
             }
             .margins(.horizontal, LayoutMetrics.horizontalMargin)
         }
