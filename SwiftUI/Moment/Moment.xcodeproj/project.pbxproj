@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		436E6BCE29FDBB03007C6F7A /* MomentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436E6BCD29FDBB03007C6F7A /* MomentApp.swift */; };
-		436E6BD029FDBB03007C6F7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436E6BCF29FDBB03007C6F7A /* ContentView.swift */; };
+		436E6BD029FDBB03007C6F7A /* ContentViewWithSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436E6BCF29FDBB03007C6F7A /* ContentViewWithSidebar.swift */; };
 		436E6BD229FDBB04007C6F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 436E6BD129FDBB04007C6F7A /* Assets.xcassets */; };
 		436E6BD529FDBB04007C6F7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 436E6BD429FDBB04007C6F7A /* Preview Assets.xcassets */; };
 		436E6BDC29FE07E8007C6F7A /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436E6BDB29FE07E8007C6F7A /* Sidebar.swift */; };
+		4377F42629FF3BEE006F0DCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4377F42529FF3BEE006F0DCF /* ContentView.swift */; };
+		4377F42829FF3C61006F0DCF /* CustomPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4377F42729FF3C61006F0DCF /* CustomPhotoPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		436E6BCA29FDBB03007C6F7A /* Moment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		436E6BCD29FDBB03007C6F7A /* MomentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentApp.swift; sourceTree = "<group>"; };
-		436E6BCF29FDBB03007C6F7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		436E6BCF29FDBB03007C6F7A /* ContentViewWithSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewWithSidebar.swift; sourceTree = "<group>"; };
 		436E6BD129FDBB04007C6F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		436E6BD429FDBB04007C6F7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		436E6BDB29FE07E8007C6F7A /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		4377F42529FF3BEE006F0DCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4377F42729FF3C61006F0DCF /* CustomPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPhotoPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +58,12 @@
 			isa = PBXGroup;
 			children = (
 				436E6BCD29FDBB03007C6F7A /* MomentApp.swift */,
-				436E6BCF29FDBB03007C6F7A /* ContentView.swift */,
+				436E6BCF29FDBB03007C6F7A /* ContentViewWithSidebar.swift */,
 				436E6BD129FDBB04007C6F7A /* Assets.xcassets */,
 				436E6BD329FDBB04007C6F7A /* Preview Content */,
 				436E6BDB29FE07E8007C6F7A /* Sidebar.swift */,
+				4377F42529FF3BEE006F0DCF /* ContentView.swift */,
+				4377F42729FF3C61006F0DCF /* CustomPhotoPicker.swift */,
 			);
 			path = Moment;
 			sourceTree = "<group>";
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				436E6BD029FDBB03007C6F7A /* ContentView.swift in Sources */,
+				436E6BD029FDBB03007C6F7A /* ContentViewWithSidebar.swift in Sources */,
 				436E6BDC29FE07E8007C6F7A /* Sidebar.swift in Sources */,
+				4377F42829FF3C61006F0DCF /* CustomPhotoPicker.swift in Sources */,
+				4377F42629FF3BEE006F0DCF /* ContentView.swift in Sources */,
 				436E6BCE29FDBB03007C6F7A /* MomentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +282,7 @@
 				DEVELOPMENT_TEAM = 2L9L899V66;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,6 +312,7 @@
 				DEVELOPMENT_TEAM = 2L9L899V66;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

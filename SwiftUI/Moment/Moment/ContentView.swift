@@ -2,57 +2,38 @@
 //  ContentView.swift
 //  Moment
 //
-//  Created by Mehmet Tarhan on 29/04/2023.
+//  Created by Mehmet Tarhan on 01/05/2023.
 //
 
+
 import SwiftUI
+import PhotosUI
 
 struct ContentView: View {
-    @State private var isSideBarOpened = false
-
+    @State var showSheet = false
+    @State var selectedImage: UIImage?
+    @State var date: Date?
+    @State var location: CLLocationCoordinate2D?
+    
     var body: some View {
-        ZStack {
-            NavigationView {
-                List {
-                    ForEach(0 ..< 30) { _ in
-                        AsyncImage(
-                            url: URL(
-                                string: "https://picsum.photos/600"
-                            )) { image in
-                                image
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(height: 240)
-                            } placeholder: {
-                                ZStack {
-                                    RoundedRectangle(cornerRadius: 12)
-                                        .fill(.gray.opacity(0.6))
-                                        .frame(height: 240)
-                                    ProgressView()
-                                }
-                            }
-                            .aspectRatio(3 / 2, contentMode: .fill)
-                            .cornerRadius(12)
-                            .padding(.vertical)
-                            .shadow(radius: 4)
-                    }
-                    .listRowSeparator(.hidden)
-                }
-                .padding()
-                .toolbar {
-                    Button {
-                        isSideBarOpened.toggle()
-                    } label: {
-                        Label("Toggle SideBar",
-                              systemImage: "line.3.horizontal.circle.fill")
-                    }
-                }
-                .listStyle(.inset)
-                .scrollIndicators(.hidden)
-                .navigationTitle("Home")
-                .navigationBarTitleDisplayMode(.inline)
+        VStack {
+            Button("Select Image!") {
+                showSheet.toggle()
             }
-            SideMenu(isSidebarVisible: $isSideBarOpened)
+            .padding()
+            if let image = selectedImage {
+                Image(uiImage: image)
+                    .resizable()
+                    .frame(width: 200, height: 200)
+            }
+            if let date = date {
+                Text("Creation date: \(date)")
+            }
+            if let location = location {
+                Text("Location: latitude \(location.latitude) longitude \(location.longitude)")
+            }
+        }.sheet(isPresented: $showSheet) {
+            CustomPhotoPickerView(selectedImage: $selectedImage, date: $date, location: $location)
         }
     }
 }
